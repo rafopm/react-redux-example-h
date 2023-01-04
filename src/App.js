@@ -1,6 +1,6 @@
 import { Provider } from "react-redux";
-import CantidadPokemon from "./components/CantidadPokemon";
-import CompraPokemon from "./components/CompraPokemon";
+import CantidadPokemonHook from "./components/CantidadPokemon.hook";
+import CompraPokemonHook from "./components/CompraPokemon.hook";
 import Contador from "./components/Contador";
 import store from "./redux/store";
 
@@ -22,18 +22,16 @@ function App() {
                 <div className="col-8">
                   <div className="card-doby">
                     <div className="card-title h3 text-center">
-                      <CantidadPokemon />
+                      <CantidadPokemonHook />
                     </div>
-                    <CompraPokemon />
-      
+                    <CompraPokemonHook />
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
-                <Contador />
+        <Contador />
       </div>
     </Provider>
   );

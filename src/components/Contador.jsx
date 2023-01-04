@@ -15,10 +15,10 @@ const Contador = () => {
       <h2>Contador Redux</h2>
       <nav>
         <button onClick={() => dispatch(incremento())}>+1</button>
-        <button onClick={() => dispatch(reset())}>0</button>
+        <button onClick={() => dispatch(reset())}>Reiniciar</button>
         <button onClick={() => dispatch(decremento())}>-1</button>
       </nav>
-        <h3>{console.log(state.cuenta)}</h3>
+        <h3>Contador: {state.cuenta.contador}</h3>
     </div>
   );
 };

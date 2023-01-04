@@ -1,7 +1,7 @@
 import { BUY_POKEMON, RETURN_POKEMON } from "../actions/gameShopActions";
 
 const default_game_shop = {
-    pokemon: 30
+    cantidad_pokemon: 30
 };
 
 const game_shop = (state = default_game_shop, action) => {
@@ -9,13 +9,13 @@ const game_shop = (state = default_game_shop, action) => {
         case BUY_POKEMON: {
             return {
                 ...state,
-                pokemon: state.pokemon - action.payload
+                cantidad_pokemon: state.cantidad_pokemon - action.payload
             }
         }
         case RETURN_POKEMON: {
             return {
                 ...state,
-                pokemon: state.pokemon + action.payload
+                cantidad_pokemon: state.cantidad_pokemon + action.payload
             }
         }
 

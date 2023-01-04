@@ -1,8 +1,7 @@
-//const { act } = require("react-dom/test-utils");
 import { INCREMENTO, DECREMENTO, RESET } from "../types";
 
 const initialState = {
-  contador: 50,
+  contador: 0,
 };
 
 // Nuestro reducer que maneja nuestros dos casos de acción incremento y decremento.
