@@ -1,4 +1,6 @@
 import { Provider } from "react-redux";
+import BuscadorPokemon from "./components/buscador/BuscadorPokemon";
+import ResultadoPokemon from "./components/buscador/ResultadoPokemon";
 import CantidadPokemonHook from "./components/CantidadPokemon.hook";
 import CompraPokemonHook from "./components/CompraPokemon.hook";
 import Contador from "./components/Contador";
@@ -31,7 +33,15 @@ function App() {
             </div>
           </div>
         </div>
-        <Contador />
+        <div className="col-12 mt-4 border-top pt-3">
+          <BuscadorPokemon />
+        </div>
+        <div className="col-12">
+          <ResultadoPokemon />
+        </div>
+        <div>
+          <Contador />
+        </div>
       </div>
     </Provider>
   );
